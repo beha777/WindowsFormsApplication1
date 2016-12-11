@@ -17,7 +17,7 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
-            tabControl1.SelectTab(6);
+            tabControl1.SelectTab(5);
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
@@ -153,7 +153,7 @@ namespace WindowsFormsApplication1
                 for (int j = 0; j < dataGridView1.RowCount; j++)
                 {
                     dataGridView1.Rows[j].Cells[i].Value = 0;
-                    if (j + 1 >= i)
+                    if (j + 1 == i)
                     {
                         dataGridView1.Rows[j].Cells[i].ReadOnly = true;
                         dataGridView1.Rows[j].Cells[i].Style.BackColor = Color.Gray;
@@ -163,6 +163,39 @@ namespace WindowsFormsApplication1
             }
             if (listBox2.Items.Count >= 0)
                 dataGridView1.Columns[0].Name = "K#";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (radioButton4.Checked)
+                tabControl1.SelectTab(1);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            int[] a = new int[100];
+            int[] b = new int[100];
+            for (int i = 0; i < dataGridView1.RowCount; i++)
+            {
+                a[i + 1] = 0;
+                if (j > 1)
+
+                for (int j = 1; j < dataGridView1.ColumnCount; j++)
+                {
+                    dataGridView1.Rows[i].Cells[j].Style.BackColor = Color.White;
+                    if (Convert.ToInt32(dataGridView1.Rows[i].Cells[j].Value) > a[i])
+                        a[i + 1] = Convert.ToInt32(dataGridView1.Rows[i].Cells[j]);
+                }
+            }
+            for (int i = 0; i < dataGridView1.RowCount; i++)
+            {
+                for (int j = 1; j < dataGridView1.ColumnCount; j++)
+                {
+                    dataGridView1.Rows[i].Cells[j].Style.BackColor = Color.White;
+                    if (Convert.ToInt32(dataGridView1.Rows[i].Cells[j].Value) <= a[i])
+                        a[i] = Convert.ToInt32(dataGridView1.Rows[i].Cells[j]);
+                }
+            }
         }
     }
 }

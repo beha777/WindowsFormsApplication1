@@ -117,7 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="listBox1.Items" xml:space="preserve">
+    <value>% займов с поручением заемщика МФО перечислить предоставляемый ему заем на банковский счет, открытый в подразделении кредитной организации, действующей в регионе, отличном от места регистрации заемщика</value>
+  </data>
+  <data name="listBox1.Items1" xml:space="preserve">
+    <value>% займов по заключению в течение небольшого периода времени договоров займа с аффилированными между собой лицами либо с юридическим лицом и находящимся с ним в трудовых отношениях физическим лицом, по которым одно лицо получает заемные средства, а другое лицо осуществляет возврат займа</value>
+  </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>173, 17</value>
   </metadata>
 </root>

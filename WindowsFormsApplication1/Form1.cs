@@ -173,7 +173,7 @@ namespace WindowsFormsApplication1
 
         private void button7_Click(object sender, EventArgs e)
         {
-            int[] a = new int[100];
+           /* int[] a = new int[100];
             int[] b = new int[100];
             for (int i = 0; i < dataGridView1.RowCount; i++)
             {
@@ -195,7 +195,7 @@ namespace WindowsFormsApplication1
                     if (Convert.ToInt32(dataGridView1.Rows[i].Cells[j].Value) <= a[i])
                         a[i] = Convert.ToInt32(dataGridView1.Rows[i].Cells[j]);
                 }
-            }
+            }*/
         }
     }
 }
